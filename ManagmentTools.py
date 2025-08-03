@@ -6,13 +6,7 @@ import mysql
 import mysql.connector
 import datetime
 import time
-db=mysql.connector.connect(
-    host="localhost",
-    user="root",
-    passwd="123456"
-)
-cur=db.cursor()
-print("Connection Successfull")
+# Database Setup
 Main=Tk()
 Main.title("Managment Tools")
 Main.geometry("1520x750+0+0")
@@ -670,5 +664,6 @@ FifthLabel=Label(FifthFrame,image=FifthImage)
 FifthLabel.place(x=0,y=0,height=150,width=200)
 FifthButton=Button(FifthFrame,bg="blue",text="Traffic",font=("Calibri",30,"bold"),fg="white",command=traffic)
 FifthButton.place(x=0,y=150,height=45,width=195)
+
 
 Main.mainloop()
